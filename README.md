@@ -32,9 +32,6 @@ Tematici: S3
 
    Tematici: S6, S7
 
-1. Creați modelul Category — categoria unei sarcini.
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.002.png)
 
 1. Definirea structurii tabelei **category** în migrație:
    1. Adăugați câmpuri:
@@ -48,9 +45,6 @@ Tematici: S3
 
          ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.003.png)
 
-1. Creați modelul Task — sarcina.
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.004.png)
 
 1. Definirea structurii tabelei **task** în migrație:
    1. Adăugați câmpuri:
@@ -63,14 +57,6 @@ Tematici: S3
          Create\_tasks\_table.php
 
          ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.005.png)
-
-1. Rulați migrarea pentru a crea tabelele în baza de date:
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.006.png)
-
-1. Creați modelul Tag — eticheta unei sarcini.
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.007.png)
 
 1. Definirea structurii tabelei **tag** în migrație:
    1. Adăugați câmpuri:
@@ -106,7 +92,7 @@ Tematici: S3
    Tematici: S8
 
 1. Creați o migrare pentru a adăuga câmpul category\_id în tabela **task**.
-   1. ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.012.png)Definiți structura câmpului category\_id și adăugați cheia externă pentru a face legătura cu tabela **category**.
+Definiți structura câmpului category\_id și adăugați cheia externă pentru a face legătura cu tabela **category**.
 
       Category.php
 
@@ -118,24 +104,13 @@ Tematici: S3
 
 1. Creați o tabelă intermediară pentru relația de tipul multe-la-multe dintre sarcini și etichete:
 
-![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.015.png)![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.016.png)
+![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.016.png)
 
 Adaug relatia in Task si Tag:
 
 ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.017.png)
 
 ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.018.png)
-
-1. Rulați migrarea pentru a crea tabela în baza de date.
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.019.png)
-
-
-
-
-
-
-
 
 
    №4. Relațiile dintre modele
@@ -166,21 +141,14 @@ Adaug relatia in Task si Tag:
 
 1. Creați o fabrică pentru modelul Category:
 
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.023.png)
-
    1. Definiți structura datelor pentru generarea categoriilor.
 
       ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.024.png)
 
 1. Creați o fabrică pentru modelul Task.
 
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.025.png)
-
    ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.026.png)
 
-1. Creați o fabrică pentru modelul Tag.
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.027.png)
 
 1. Creați seed-uri pentru a popula tabelele cu date inițiale pentru modelele Category, Task, Tag.
 
@@ -201,8 +169,6 @@ Adaug relatia in Task si Tag:
    ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.031.png)
 
 1. Actualizați fișierul DatabaseSeeder pentru a lansa seed-urile și rulați-le:
-
-   ![](Aspose.Words.a0271f9e-ee47-4f1b-bc00-50e3d49574b7.032.png)
 
    №6. Lucrul cu controlere și vizualizări
 
